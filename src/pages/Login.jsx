@@ -15,11 +15,11 @@ function Login() {
 
   const usuario = email.split("@")[0];
 
-  // 🔥 Detectar si es número (alumno)
+ 
   if (!isNaN(usuario)) {
-    alert("Entraste como ALUMNO");
+    alert("Bienvenido, alumno");
   } else {
-    alert("Entraste como DOCENTE");
+    alert("Bienvenido, docente");
   }
 };
 
