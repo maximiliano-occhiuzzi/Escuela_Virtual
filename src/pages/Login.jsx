@@ -25,8 +25,9 @@ function Login() {
 
   return (
     <div className="login-bg">
+        
       <div className="login-card shadow">
-        <h2 className="text-center mb-4">Sistema Escolar</h2>
+        <h2 className="text-center mb-4">Inicia sesión en Escuela Virtual</h2>
 
         <form onSubmit={handleLogin}>
           <input
