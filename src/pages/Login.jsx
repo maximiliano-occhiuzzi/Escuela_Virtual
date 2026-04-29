@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./Login.css";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+const navigate = useNavigate();
   const handleLogin = (e) => {
   e.preventDefault();
 
@@ -16,13 +18,11 @@ function Login() {
   const usuario = email.split("@")[0];
 
  
-  if (!isNaN(usuario)) {
-    alert("Bienvenido, alumno");
-      window.location.href = "/PanelAlumno"
-
-  } else {
-    alert("Bienvenido, docente");
-  }
+ if (!isNaN(usuario)) {
+  navigate("/alumno");
+} else {  
+  navigate("/docente");
+}
 };
 
   return (

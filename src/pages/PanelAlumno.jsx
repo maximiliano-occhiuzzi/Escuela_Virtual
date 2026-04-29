@@ -1,85 +1,70 @@
-import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import "./PanelAlumno.css";
 
-
-
- function PanelAlumno() {
-  const [count, setCount] = useState(0)
-
+function PanelAlumno() {
   return (
     <>
-  
-<header>
-  <div className="px-3 py-2 text-bg-dark border-bottom">
-    <div className="container">
-      <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-          <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-            <use xlinkHref="#bootstrap"></use>
-          </svg>
-        </a>
-        <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-          <li>
-            <a href="#" className="nav-link text-secondary">
-              <svg className="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
-                <use xlinkHref="#home"></use>
-              </svg>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" className="nav-link text-white">
-              <svg className="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
-                <use xlinkHref="#speedometer2"></use>
-              </svg>
-              Dashboard
-            </a>
-          </li>
-          <li>
-            <a href="#" className="nav-link text-white">
-              <svg className="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
-                <use xlinkHref="#table"></use>
-              </svg>
-              Orders
-            </a>
-          </li>
-          <li>
-            <a href="#" className="nav-link text-white">
-              <svg className="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
-                <use xlinkHref="#grid"></use>
-              </svg>
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" className="nav-link text-white">
-              <svg className="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
-                <use xlinkHref="#people-circle"></use>
-              </svg>
-              Customers
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div className="px-3 py-2 border-bottom mb-3">
-    <div className="container d-flex flex-wrap justify-content-center">
-      <form className="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-        <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
-      </form>
-      <div className="text-end">
-        <button type="button" className="btn btn-light text-dark me-2">
-          Login
-        </button>
-        <button type="button" className="btn btn-primary">Sign-up</button>
-      </div>
-    </div>
-  </div>
-</header>
+      {/* NAVBAR */}
+      <header>
+        <div className="px-3 py-2 text-bg-dark border-bottom">
+          <div className="container">
+            <div className="d-flex flex-wrap align-items-center justify-content-between">
 
+              {/* Logo / Inicio */}
+              <Link to="/alumno" className="text-white text-decoration-none">
+                <h4>Escuela Virtual</h4>
+              </Link>
+
+              {/* Navegación */}
+              <ul className="nav">
+                <li className="nav-item">
+                  <Link to="/alumno" className="nav-link text-white">
+                    Inicio
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link text-white" href="#">
+                    Tareas
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link text-white" href="#">
+                    Avisos
+                  </a>
+                </li>
+              </ul>
+
+              {/* Botón logout */}
+              <div>
+                <Link to="/" className="btn btn-light">
+                  Cerrar sesión
+                </Link>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* CONTENIDO */}
+      <main className="container mt-4">
+        <h2>Bienvenido Alumno 👨‍🎓</h2>
+
+        <p className="text-muted">
+          Acá vas a poder ver tus tareas y avisos.
+        </p>
+
+        {/* Ejemplo de tarjeta */}
+        <div className="card mt-3 p-3">
+          <h5>Tarea de Matemática</h5>
+          <p>Resolver ejercicios de la página 45</p>
+          <small className="text-danger">Entrega: 25/04</small>
+        </div>
+      </main>
     </>
-    
-  )
+  );
 }
 
-export default PanelAlumno
+export default PanelAlumno;
