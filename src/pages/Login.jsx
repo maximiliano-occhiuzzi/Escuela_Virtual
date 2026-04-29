@@ -18,6 +18,8 @@ function Login() {
  
   if (!isNaN(usuario)) {
     alert("Bienvenido, alumno");
+      window.location.href = "/PanelAlumno"
+
   } else {
     alert("Bienvenido, docente");
   }
