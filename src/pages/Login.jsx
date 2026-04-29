@@ -19,9 +19,9 @@ const navigate = useNavigate();
 
  
  if (!isNaN(usuario)) {
-  navigate("/alumno");
+  navigate("/PanelAlumno");
 } else {  
-  navigate("/docente");
+  navigate("/PanelDocente"); 
 }
 };
 

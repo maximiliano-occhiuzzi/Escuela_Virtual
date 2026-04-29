@@ -11,7 +11,7 @@ function PanelAlumno() {
             <div className="d-flex flex-wrap align-items-center justify-content-between">
 
               {/* Logo / Inicio */}
-              <Link to="/alumno" className="text-white text-decoration-none">
+              <Link to="/PanelAlumno" className="text-white text-decoration-none">
                 <h4>Escuela Virtual</h4>
               </Link>
 
@@ -57,11 +57,15 @@ function PanelAlumno() {
         </p>
 
         {/* Ejemplo de tarjeta */}
-        <div className="card mt-3 p-3">
+          <div className="card mt-3 p-3">
+            <button>
           <h5>Tarea de Matemática</h5>
           <p>Resolver ejercicios de la página 45</p>
           <small className="text-danger">Entrega: 25/04</small>
-        </div>
+          <Link to= "/TarjetaTarea">
+          </Link>
+          </button>
+        </div>  
       </main>
     </>
   );
