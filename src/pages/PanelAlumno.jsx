@@ -1,22 +1,21 @@
 import { Link } from "react-router-dom";
-import "./PanelAlumno.css";
+import "./Panel.css";
+import Navbar from "../components/Navbar";
 
 function PanelAlumno() {
   return (
     <>
-      {/* NAVBAR */}
-      <header>
-        <div className="px-3 py-2 text-bg-dark border-bottom">
-          <div className="container">
-            <div className="d-flex flex-wrap align-items-center justify-content-between">
+      
+   <Navbar
 
-              {/* Logo / Inicio */}
+             logo={
               <Link to="/PanelAlumno" className="text-white text-decoration-none">
                 <h4>Escuela Virtual</h4>
               </Link>
-
-              {/* Navegación */}
-              <ul className="nav">
+                  }
+                    
+            center= {
+               <>
                 <li className="nav-item">
                   <Link to="/alumno" className="nav-link text-white">
                     Inicio
@@ -34,21 +33,17 @@ function PanelAlumno() {
                     Avisos
                   </a>
                 </li>
-              </ul>
-
-              {/* Botón logout */}
-              <div>
+                
+              </>
+            }
+              
+             rightsesion={ 
                 <Link to="/" className="btn btn-light">
                   Cerrar sesión
                 </Link>
-              </div>
+            }
+ />
 
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* CONTENIDO */}
       <main className="container mt-4">
         <h2>Bienvenido Alumno 👨‍🎓</h2>
 

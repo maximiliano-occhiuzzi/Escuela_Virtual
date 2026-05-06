@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./PanelDocente.css";
+import "./Panel.css";
 import { useNavigate } from "react-router-dom";
 
 function PanelDocente() {

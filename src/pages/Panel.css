@@ -1,0 +1,66 @@
+/* 🌐 Fondo general */
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+/* 🧱 Contenedor principal */
+.panel-container {
+  padding-top: 20px;
+}
+
+/* 🧾 Tarjetas (tareas) */
+.card {
+  border-radius: 12px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* ✨ Hover tarjeta */
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧠 Título de tarjeta */
+.card h5 {
+  font-weight: 600;
+}
+
+/* 📅 Fecha entrega */
+.card small {
+  font-size: 0.8rem;
+}
+
+/* 🔘 Botones dentro de tarjeta (si usas button) */
+.card button {
+  all: unset;
+  display: block;
+  width: 100%;
+}
+
+/* 🧭 Navbar personalizado */
+header {
+  background-color: #1e1e2f;
+}
+
+/* Links del navbar */
+.nav-link {
+  transition: 0.2s;
+}
+
+/* Hover navbar */
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Botón cerrar sesión */
+.btn-light {
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+}
