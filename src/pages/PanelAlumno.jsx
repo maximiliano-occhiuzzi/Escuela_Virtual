@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Panel.css";
 import Navbar from "../components/Navbar";
+import TarjetaClase from "../components/TarjetaClase";
 
 function PanelAlumno() {
   return (
@@ -8,7 +9,7 @@ function PanelAlumno() {
       
    <Navbar
 
-             logo={
+             logo= {
               <Link to="/PanelAlumno" className="text-white text-decoration-none">
                 <h4>Escuela Virtual</h4>
               </Link>
@@ -50,18 +51,16 @@ function PanelAlumno() {
         <p className="text-muted">
           Acá vas a poder ver tus tareas y avisos.
         </p>
+      <TarjetaClase
+      nombre="Matematica"
+      profesor="romo"
+      ruta ="/Matematica"
 
-        {/* Ejemplo de tarjeta */}
-          <div className="card mt-3 p-3">
-            <button>
-          <h5>Tarea de Matemática</h5>
-          <p>Resolver ejercicios de la página 45</p>
-          <small className="text-danger">Entrega: 25/04</small>
-          <Link to= "/TarjetaTarea">
-          </Link>
-          </button>
-        </div>  
+      />
+         
       </main>
+
+      
     </>
   );
 }

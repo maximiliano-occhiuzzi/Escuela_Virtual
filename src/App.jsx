@@ -4,7 +4,7 @@ import PanelAlumno from "./pages/PanelAlumno";
 import Login from "./pages/Login";
 import PanelDocente from "./pages/PanelDocente"
 import TarjetaTarea from "./components/TarjetaTarea"
-
+import Matematica from  "./pages/Matematica"
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +14,7 @@ function App() {
         <Route path="/PanelAlumno" element={<PanelAlumno/>} />
         <Route path="/PanelDocente" element={<PanelDocente/>} />
         <Route path="/TarjetaTarea" element={<TarjetaTarea/>} />
+        <Route path="/Matematica" element={<Matematica/>} />
       </Routes>
     </BrowserRouter>
   );

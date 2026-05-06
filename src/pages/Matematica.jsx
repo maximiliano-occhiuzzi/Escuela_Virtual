@@ -12,3 +12,4 @@ function Matematica() {
         </div>
     )
 }
+export default Matematica;

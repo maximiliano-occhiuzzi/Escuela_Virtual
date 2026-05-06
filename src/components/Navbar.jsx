@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 
-function Navbar({ left, center, rightsesion }) {
+function Navbar({center, rightsesion, logo }) {
   return (
     <header>
       <div className="px-3 py-2 text-bg-dark border-bottom">
@@ -12,7 +12,6 @@ function Navbar({ left, center, rightsesion }) {
           <div className="logo"
           >{logo}</div>
 
-            <div className="izquierda">{left}</div>
 
             <ul className="nav">
               {center}
@@ -28,7 +27,10 @@ function Navbar({ left, center, rightsesion }) {
         </div>
       </div>
     </header>
+
   );
 }
+
+
 
 export default Navbar;
