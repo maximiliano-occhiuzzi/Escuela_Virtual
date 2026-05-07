@@ -1,0 +1,15 @@
+/* Home.css */
+
+main.container {
+  padding-top: 20px;
+  min-height: 80vh;
+}
+
+h2 {
+  color: #1f2937;
+  font-weight: bold;
+}
+
+p {
+  color: #4b5563;
+}

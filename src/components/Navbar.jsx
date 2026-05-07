@@ -17,9 +17,9 @@ function Navbar({center, rightsesion, logo }) {
               {center}
             </ul>
 
-            <div className="text-end">
-              {rightsesion}
-            </div>
+            <div className="position-absolute top-0 end-0 m-3">
+             {rightsesion}
+              </div>
 
 
             

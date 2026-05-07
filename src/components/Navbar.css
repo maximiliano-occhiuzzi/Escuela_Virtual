@@ -1,61 +1,45 @@
 /* CONTENEDOR PRINCIPAL */
 .navbar {
-  background-color: #1f2937; /* gris oscuro */
+  background-color: #1f2937;
   color: white;
   padding: 12px 20px;
   border-bottom: 2px solid #111827;
+  position: relative; /* Importante para que el logo absoluto se ubique bien */
 }
 
-/* CONTENIDO INTERNO */
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* LOGO */
-.navbar-logo h4 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* LINKS */
-.navbar-links {
+/* LINKS Y LISTA */
+.nav {
   list-style: none;
   display: flex;
   gap: 20px;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
-.navbar-links li {
+.nav li {
   display: inline;
 }
 
-.navbar-links a {
+.nav .nav-link {
   color: white;
   text-decoration: none;
   font-size: 14px;
   transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* HOVER */
-.navbar-links a:hover {
-  color: #60a5fa; /* azul */
+.nav .nav-link:hover {
+  color: #60a5fa !important;
 }
 
-/* BOTÓN */
-.navbar-button button {
-  background-color: white;
-  color: #1f2937;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s;
+/* IMAGEN DE PERFIL (Rightsesion) */
+.rounded-circle {
+  transition: transform 0.2s;
 }
 
-.navbar-button button:hover {
-  background-color: #e5e7eb;
+.rounded-circle:hover {
+  transform: scale(1.1);
 }
