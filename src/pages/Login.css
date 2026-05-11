@@ -1,42 +1,86 @@
-/* Fondo ocupa toda la pantalla */
+/* Login.css */
+
 .login-bg {
   height: 100vh;
-  background: linear-gradient(135deg, #4e73df, #224abe);
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* Para que el pseudo-elemento no se escape */
+  overflow: hidden;
+  background-color: #000; /* Fondo base por si la imagen tarda en cargar */
 }
 
-/* Tarjeta */
+/* La capa de la imagen con opacidad (Igual a tu contenido-principal) */
+.login-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Usamos la misma imagen que pediste o podés cambiar el link acá */
+  background-image: url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Ajuste de opacidad para que no moleste a la vista */
+  opacity: 0.50; 
+  z-index: 1; 
+}
+
+/* La tarjeta del login ahora necesita estar por encima del fondo */
 .login-card {
   background: white;
   padding: 40px;
-  border-radius: 12px;
+  border: 3px solid #000; 
+  border-radius: 20px;
   width: 100%;
-  max-width: 380px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  box-shadow: 12px 12px 0px rgba(0, 0, 0, 1); 
+  position: relative; /* Clave para que el z-index funcione */
+  z-index: 2; /* Por encima del background */
 }
 
-/* Título */
 .login-card h2 {
-  font-weight: 600;
-  color: #333;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-/* Inputs */
-.login-card input {
-  height: 45px;
-  border-radius: 8px;
+.login-card .form-control {
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-/* Botón */
-.login-card button {
-  height: 45px;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: 0.3s;
+.login-card .btn-primary {
+  height: 55px;
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s;
 }
 
-.login-card button:hover {
-  transform: scale(1.05);
+.login-card .btn-primary:hover {
+  background-color: #4e73df;
+  transform: translate(-3px, -3px);
+  box-shadow: 4px 4px 0px #224abe;
+}
+
+/* El cuadro de los correos */
+.login-card .text-muted {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff4e5;
+  border: 2px dashed #000;
+  border-radius: 10px;
+  color: #000 !important;
+  font-size: 0.85rem;
 }
