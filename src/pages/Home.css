@@ -8,8 +8,8 @@
 /* CONTENEDOR CON LA IMAGEN DE FONDO */
 /* CONTENEDOR CON LA IMAGEN DE FONDO */
 .contenido-principal {
-  max-width: 1100px;
-  
+  max-width: 2000px;
+  margin: 0 auto;
   padding: 60px 40px;
   position: relative; /* Esto es clave para que el fondo no se escape */
   border-radius: 20px; 

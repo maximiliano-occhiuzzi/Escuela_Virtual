@@ -1,0 +1,15 @@
+.pie-pagina {
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  margin-top: auto; /* Empuja el footer al final si usas flexbox */
+  width: 100%;
+}
+
+.pie-pagina p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+}

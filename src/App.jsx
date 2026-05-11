@@ -3,11 +3,10 @@ import Home from "./pages/Home";
 import PanelAlumno from "./pages/PanelAlumno";
 import Login from "./pages/Login";
 import PanelDocente from "./pages/PanelDocente"
-import TarjetaTarea from "./components/TarjetaTarea"
 import Matematica from  "./pages/Matematica"
 import Nosotros from "./pages/Nosotros"
 import Contacto from "./pages/Contacto"
-import TarjetaClase from "./components/TarjetaClase"
+import FormularioTarea from "./components/FormularioTarea"
 import Fisica from "./pages/Fisica"
 import Programacion from "./pages/Programacion"
 
@@ -20,7 +19,7 @@ function App() {
         <Route path="/Login" element={<Login/>} />
         <Route path="/PanelAlumno" element={<PanelAlumno/>} />
         <Route path="/PanelDocente" element={<PanelDocente/>} />
-        <Route path="/TarjetaTarea" element={<TarjetaTarea/>} />
+        <Route path="/FormularioTarea" element={<FormularioTarea/>} />
         <Route path="/Matematica" element={<Matematica/>} />
         <Route path="/contacto" element={<Contacto/>} />
         <Route path="/nosotros" element={<Nosotros/>} />

@@ -3,6 +3,7 @@ import "./Panel.css";
 import Navbar from "../components/Navbar";
 import TarjetaClase from "../components/TarjetaClase";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
+import Footer from "../components/Footer";
 
 // ... (tus imports iguales)
 
@@ -26,10 +27,15 @@ function PanelAlumno() {
           </Link>
         }
       />
+        <main className="container mt-4">
+        <div className="d-flex justify-content-between align-items-center">
+            <div>
+                <h2>Bienvenido Ciro Jeronimo Giovinazzo</h2>
+                <p className="text-muted">Acá vas a poder ver tus clases.</p>
+            </div>
+            <span className="badge bg-primary p-2">Perfil: Alumno</span>
+        </div>
 
-      <main className="container mt-4">
-        <h2>Bienvenido Ciro Jeronimo Giovinazzo</h2>
-        <p className="text-muted">Acá vas a poder ver tus clases.</p>
 
         {/* CONTENEDOR DE LAS TARJETAS */}
        <div className="contenedor-grid">
@@ -63,6 +69,7 @@ function PanelAlumno() {
           
           {/* Puedes agregar más tarjetas aquí y se acomodarán solas */}
       </main>
+      <Footer/>
     </>
   );
 }

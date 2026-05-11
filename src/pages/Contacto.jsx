@@ -3,6 +3,7 @@ import './Contacto.css';
 import Navbar from "../components/Navbar";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({ nombre: '', email: '', mensaje: '' });
@@ -21,6 +22,13 @@ const Contacto = () => {
       <Navbar 
         logo={<Link to="/"><img src={miLogo} alt="Logo" style={{height:'60px'}}/></Link>}
         rightsesion={<Link to="/" className="btn-salir">Volver</Link>}
+         center={
+                  <>
+                    <li><Link to="/" className="nav-link-custom">Home</Link></li>
+                    <li><Link to="/nosotros" className="nav-link-custom">¿Quiénes somos?</Link></li>
+                    <li><Link to="/contacto" className="nav-link-custom">Contacto</Link></li>
+                  </>
+                }
       />
       <main className="container-contacto">
         <div className="contacto-card">
@@ -64,6 +72,7 @@ const Contacto = () => {
           </form>
         </div>
       </main>
+      <Footer/>
     </>
   );
 };

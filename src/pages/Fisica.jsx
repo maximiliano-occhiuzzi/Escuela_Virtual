@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import TarjetaTarea from "../components/TarjetaTarea";
+import FormularioTarea from "../components/FormularioTarea";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
+import Footer from '../components/Footer';
 
 function Fisica() {
-  const colorMateria = "#D4E6F1"; // Azul
+  const colorMateria = "rgba(122, 194, 40, 0.65)"; // El verde de tu tarjeta
+  const [mostrarForm, setMostrarForm] = useState(false);
 
   return (
     <>
@@ -15,31 +17,40 @@ function Fisica() {
       />
       
       <main className="container mt-5">
-        <div className="header-materia mb-4">
-          <h1>Matemática 📐</h1>
-          <p className="text-muted">Curso: 6to Año TC</p>
-          <hr />
-        </div>
-
-        <div className="row">
-          <div className="col-md-4 mb-3">
-            <TarjetaTarea 
-              titulo="Ecuaciones Cuadráticas" 
-              fecha="12/05" 
-              estado="Pendiente" 
-              colorMateria={colorMateria} 
-            />
+        <div className="header-materia d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h1>Física ⚛️</h1>
+            <p className="text-muted">Curso: 6to Año TC | Prof. Méndez</p>
           </div>
-          <div className="col-md-4 mb-3">
-            <TarjetaTarea 
-              titulo="Funciones" 
-              fecha="05/05" 
-              estado="Entregado" 
-              colorMateria={colorMateria} 
-            />
+
+          <button 
+            className={`btn ${mostrarForm ? 'btn-danger' : 'btn-dark'} shadow`} 
+            style={{ borderRadius: '50%', width: '60px', height: '60px', fontSize: '30px', border: '3px solid #000' }}
+            onClick={() => setMostrarForm(!mostrarForm)}
+          >
+            {mostrarForm ? '−' : '+'}
+          </button>
+        </div>
+        <hr />
+
+        <div className="row justify-content-center">
+          <div className="col-md-8 col-lg-6">
+            {mostrarForm && (
+              <div className="contenedor-formulario-animado">
+                <FormularioTarea materiaNombre="Física" colorMateria={colorMateria} />
+              </div>
+            )}
+
+            {!mostrarForm && (
+              <div className="text-center py-5">
+                <p className="text-muted">No hay tareas nuevas para mostrar.</p>
+                <small>Hacé clic en el botón superior para crear una.</small>
+              </div>
+            )}
           </div>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }
