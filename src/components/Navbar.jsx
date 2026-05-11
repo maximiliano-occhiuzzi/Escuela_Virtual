@@ -1,36 +1,38 @@
-import { Link } from "react-router-dom";
-import "./Navbar.css";
+  import { Link } from "react-router-dom";
+  import "./Navbar.css";
 
 
-function Navbar({center, rightsesion, logo }) {
-  return (
-    <header>
-      <div className="px-3 py-2 text-bg-dark border-bottom">
-        <div className="container">
-          <div className="d-flex flex-wrap align-items-center justify-content-between">
-
-          <div className="logo"
-          >{logo}</div>
+  function Navbar({center, rightsesion, logo }) {
+    return (
+      <header className="navbar-custom">
+        <div className="navbar-container">
+          
 
 
-            <ul className="nav">
+            <div className="navbar-left"
+            >{logo}</div>
+
+
+            <nav className="navbar-center">
+            <ul className="nav-links">
               {center}
             </ul>
+          </nav>
 
-            <div className="position-absolute top-0 end-0 m-3">
-             {rightsesion}
-              </div>
+              <div className="navbar-right">
+              {rightsesion}
+                </div>
 
 
-            
+              
+          
           </div>
-        </div>
-      </div>
-    </header>
+        
+      </header>
 
-  );
-}
-
+    );
+  }
 
 
-export default Navbar;
+
+  export default Navbar;

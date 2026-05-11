@@ -1,0 +1,46 @@
+import React from 'react';
+import './Nosotros.css';
+import Navbar from "../components/Navbar"; // No olvides el Navbar para volver
+import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
+import { Link } from "react-router-dom";
+
+const Nosotros = () => {
+  return (
+    <>
+      <Navbar 
+        logo={<Link to="/"><img src={miLogo} alt="Logo" style={{height:'60px'}}/></Link>}
+        rightsesion={<Link to="/" className="btn-salir">Volver</Link>}
+      />
+      <main className="container-nosotros">
+        <div className="nosotros-card">
+          <h1 className="titulo-seccion">Quiénes Somos 🚀</h1>
+          
+          <section className="nosotros-section">
+            <h2>Nuestra Misión</h2>
+            <p>
+              En <strong>Escuela Virtual</strong>, nos dedicamos a transformar la educación 
+              mediante herramientas tecnológicas innovadoras que rompen las barreras 
+              geográficas y conectan el conocimiento con las personas.
+            </p>
+          </section>
+
+          <section className="nosotros-section">
+            <h2>¿Por qué nosotros?</h2>
+            <ul className="nosotros-lista">
+              <li>✅ Acceso 24/7 a contenido educativo.</li>
+              <li>✅ Plataforma intuitiva y fácil de usar.</li>
+              <li>✅ Comunidad activa de aprendizaje.</li>
+            </ul>
+          </section>
+
+          <section className="nosotros-section">
+            <h2>Nuestro Equipo</h2>
+            <p>Somos un grupo de desarrolladores y educadores apasionados por democratizar el saber.</p>
+          </section>
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Nosotros;

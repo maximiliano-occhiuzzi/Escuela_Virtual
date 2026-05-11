@@ -1,0 +1,146 @@
+/* =========================
+   LINK
+========================= */
+
+.tarjeta-link {
+  text-decoration: none;
+  display: block;
+}
+
+/* =========================
+   TARJETA GENERAL
+========================= */
+
+.tarjeta-mosaico {
+  height: 250px;
+
+  border: 1px solid #E5E7EB;
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+
+  position: relative;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* HOVER */
+
+.tarjeta-mosaico:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.10);
+
+  border-color: #D1D5DB;
+}
+
+/* =========================
+   MITAD SUPERIOR
+========================= */
+
+.tarjeta-superior {
+  flex: 1;
+
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-instituto-card {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  width:50px;
+  height: auto;
+
+  object-fit: contain;
+
+}
+
+/* =========================
+   ICONO
+========================= */
+
+.tarjeta-icono {
+  font-size: 55px;
+}
+
+/* =========================
+   MITAD INFERIOR
+========================= */
+
+.tarjeta-inferior {
+  flex: 1;
+
+  border-top: 1px solid #E5E7EB;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 15px;
+
+    backdrop-filter: blur(10px);
+}
+
+/* =========================
+   TEXTOS
+========================= */
+
+.tarjeta-nombre {
+  margin: 0;
+
+  font-size: 1.8rem;
+  font-weight: 800;
+
+  color: #000000;
+}
+
+.tarjeta-profesor {
+  margin: 6px 0;
+
+  font-size: 1,5rem;
+
+  color: #0f0f10;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.tarjeta-curso {
+  background-color: white;
+
+  border: 1px solid #D1D5DB;
+  border-radius: 999px;
+
+  color: #374151;
+
+  padding: 5px 14px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}

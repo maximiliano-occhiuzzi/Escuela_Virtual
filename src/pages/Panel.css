@@ -1,66 +1,66 @@
-/* 🌐 Fondo general */
-body {
-  background-color: #f4f6f9;
-  font-family: Arial, sans-serif;
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+body{
+  background-color: #FFFFFF;
 }
 
-/* 🧱 Contenedor principal */
-.panel-container {
-  padding-top: 20px;
+main.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  background-color: #FFFFFF;
+  min-height: 100vh;
 }
 
-/* 🧾 Tarjetas (tareas) */
-.card {
-  border-radius: 12px;
-  border: none;
-  transition: all 0.2s ease;
+/* =========================
+   TITULOS
+========================= */
+
+h2 {
+  color: #111827;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
-/* ✨ Hover tarjeta */
-.card:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.text-muted {
+  color: #6B7280;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
-/* 🧠 Título de tarjeta */
-.card h5 {
-  font-weight: 600;
-}
+/* =========================
+   GRID
+========================= */
 
-/* 📅 Fecha entrega */
-.card small {
-  font-size: 0.8rem;
-}
+.contenedor-grid {
+  display: grid;
 
-/* 🔘 Botones dentro de tarjeta (si usas button) */
-.card button {
-  all: unset;
-  display: block;
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 25px;
+
+  padding: 20px 0;
+
   width: 100%;
 }
 
-/* 🧭 Navbar personalizado */
-header {
-  background-color: #1e1e2f;
-}
+/* =========================
+   NAVBAR
+========================= */
 
-/* Links del navbar */
 .nav-link {
+  color: #000 !important;
+  font-weight: 600;
   transition: 0.2s;
 }
 
-/* Hover navbar */
 .nav-link:hover {
-  color: #0d6efd !important;
-}
-
-/* Botón cerrar sesión */
-.btn-light {
-  border-radius: 8px;
-  transition: 0.2s;
-}
-
-.btn-light:hover {
-  background-color: #e2e6ea;
+  color: #3B82F6 !important;
 }

@@ -1,0 +1,71 @@
+/* Contacto.css */
+.container-contacto {
+  padding-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.contacto-card {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  /* Sombra elegante y profunda */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.titulo-contacto {
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitulo-contacto {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-custom {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  font-family: inherit;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.input-custom:focus {
+  background: #fdf9ff;
+  outline: none;
+  border-color: #7919d3; /* Color de tu marca */
+}
+
+.btn-enviar-contacto {
+  background: #000;
+  color: #fff;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-enviar-contacto:hover {
+  background: #7919d3;
+  transform: translateY(-5px);
+}

@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import TarjetaTarea from "../components/TarjetaTarea";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 
-function Matematica() {
+function Fisica() {
   const colorMateria = "#D4E6F1"; // Azul
 
   return (
@@ -44,4 +44,4 @@ function Matematica() {
   );
 }
 
-export default Matematica;
+export default Fisica;

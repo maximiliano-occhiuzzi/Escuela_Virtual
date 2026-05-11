@@ -4,13 +4,13 @@ import Navbar from "../components/Navbar";
 import TarjetaTarea from "../components/TarjetaTarea";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 
-function Matematica() {
+function Programacion() {
   const colorMateria = "#D4E6F1"; // Azul
 
   return (
     <>
       <Navbar 
-        logo={<Link to="/"><img src={miLogo} alt="Logo" style={{height:'60px'}}/></Link>}
+        logo={<Link to="/"><img src={miLogo} alt="Logo" sty le={{height:'60px'}}/></Link>}
         rightsesion={<Link to="/" className="btn btn-outline-danger">Cerrar Sesion</Link>}
       />
       
@@ -44,4 +44,4 @@ function Matematica() {
   );
 }
 
-export default Matematica;
+export default Programacion;

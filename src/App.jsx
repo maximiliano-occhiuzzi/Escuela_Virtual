@@ -5,6 +5,13 @@ import Login from "./pages/Login";
 import PanelDocente from "./pages/PanelDocente"
 import TarjetaTarea from "./components/TarjetaTarea"
 import Matematica from  "./pages/Matematica"
+import Nosotros from "./pages/Nosotros"
+import Contacto from "./pages/Contacto"
+import TarjetaClase from "./components/TarjetaClase"
+import Fisica from "./pages/Fisica"
+import Programacion from "./pages/Programacion"
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +22,10 @@ function App() {
         <Route path="/PanelDocente" element={<PanelDocente/>} />
         <Route path="/TarjetaTarea" element={<TarjetaTarea/>} />
         <Route path="/Matematica" element={<Matematica/>} />
+        <Route path="/contacto" element={<Contacto/>} />
+        <Route path="/nosotros" element={<Nosotros/>} />
+        <Route path="/fisica" element={<Fisica/>} />
+        <Route path="/programacion" element={<Programacion/>} />
       </Routes>
     </BrowserRouter>
   );
