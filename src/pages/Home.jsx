@@ -19,7 +19,6 @@ function Home() {
         }
         center={
           <>
-            <li><Link to="/" className="nav-link-custom">Home</Link></li>
             <li><Link to="/nosotros" className="nav-link-custom">¿Quiénes somos?</Link></li>
             <li><Link to="/contacto" className="nav-link-custom">Contacto</Link></li>
           </>
@@ -38,19 +37,16 @@ function Home() {
 
       <main className="contenido-principal">
         
-        {/* Nuevo Header: Más integrado con tu estilo */}
         <header className="home-presentacion">
           <div className="bloque-texto">
             <h1>Potenciá tu futuro en el <br /> <span>Instituto Luna</span></h1>
             <p>La mejor plataforma para estudiar desde tu casa con tecnología de punta.</p>
             <div className="botones-accion">
-              <Link to="/Login" className="btn-azul-luna">Ir a mi Panel</Link>
-              <Link to="/nosotros" className="btn-borde-luna">Saber más</Link>
+              <Link to="/Login" className="btn-azul-luna">Iniciar Sesión</Link>
             </div>
           </div>
         </header>
 
-        {/* Tu contenido original (Sin tocar nada) */}
         <section className="seccion-cuadros">
           <div className="cuadro-info">
             <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Icono" />

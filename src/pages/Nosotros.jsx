@@ -22,8 +22,7 @@ const Nosotros = () => {
                 }   
          center={
                   <>
-                    <li><Link to="/" className="nav-link-custom">Home</Link></li>
-                    <li><Link to="/nosotros" className="nav-link-custom">¿Quiénes somos?</Link></li>
+                    <li><Link to="/" className="nav-link-custom">Inicio</Link></li>
                     <li><Link to="/contacto" className="nav-link-custom">Contacto</Link></li>
                   </>
                 }
@@ -34,7 +33,7 @@ const Nosotros = () => {
       
       <main className="container-nosotros">
         <div className="nosotros-card">
-          <h1 className="titulo-seccion">Quiénes Somos 🚀</h1>
+          <h1 className="titulo-seccion">Quiénes Somos</h1>
           
           <section className="nosotros-section">
             <h2>Nuestra Misión</h2>
@@ -48,9 +47,9 @@ const Nosotros = () => {
           <section className="nosotros-section">
             <h2>¿Por qué nosotros?</h2>
             <ul className="nosotros-lista">
-              <li>✅ Acceso 24/7 a contenido educativo.</li>
-              <li>✅ Plataforma intuitiva y fácil de usar.</li>
-              <li>✅ Interfaz bonita a la hora de navegar.</li>
+              <p>Acceso 24/7 a contenido educativo.</p>
+              <p>Plataforma intuitiva y fácil de usar.</p>
+              <p>Interfaz bonita a la hora de navegar.</p>
             </ul>
           </section>
 

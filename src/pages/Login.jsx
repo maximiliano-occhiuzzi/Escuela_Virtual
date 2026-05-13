@@ -50,11 +50,7 @@ const navigate = useNavigate();
             Ingresar
           </button>
         </form>
-
-        <p className="text-center mt-3 small text-muted">
-          Docente: sebastiandavalos@fatimarem.edu.ar <br />
-          Alumno: 48318493@fatimarem.edu.ar
-        </p>
+        
       </div>
     </div>
   );

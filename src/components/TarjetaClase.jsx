@@ -8,21 +8,14 @@ function TarjetaClase({
   profesor,
   curso,
   ruta,
-  icono = "📁",
+  icono = "",
   colorFondo = "#8B5CF6"
 }) {
   return (
     <Link to={ruta} className="tarjeta-link">
       <div className="tarjeta-mosaico">
 
-        {/* PARTE SUPERIOR */}
         <div className="tarjeta-superior">
-
-          <img
-            src={miLogo}
-            alt="Logo"
-            className="logo-instituto-card"
-          />
 
           <div className="tarjeta-icono">
             {icono}

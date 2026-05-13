@@ -21,7 +21,7 @@ function Programacion() {
       <main className="container mt-5">
         <div className="header-materia d-flex justify-content-between align-items-center mb-4">
           <div>
-            <h1>Programación 💻</h1>
+            <h1>Programación</h1>
             <p className="text-muted">Curso: 6to Año TC</p>
           </div>
 
@@ -52,7 +52,6 @@ function Programacion() {
             {!mostrarForm && (
               <div className="text-center py-5">
                 <p className="text-muted">No hay tareas nuevas para mostrar.</p>
-                <small>Hacé clic en el botón superior para crear una.</small>
               </div>
             )}
           </div>

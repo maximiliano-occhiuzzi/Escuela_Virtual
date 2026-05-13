@@ -30,10 +30,9 @@ function PanelAlumno() {
         <main className="container mt-4">
         <div className="d-flex justify-content-between align-items-center">
             <div>
-                <h2>Bienvenido Ciro Jeronimo Giovinazzo</h2>
+                <h2>¡Bienvenido!</h2>
                 <p className="text-muted">Acá vas a poder ver tus clases.</p>
-            </div>
-            <span className="badge bg-primary p-2">Perfil: Alumno</span>
+            </div><spam className= "badge bg-primary p-2">Perfil: Alumno</spam>
         </div>
 
 
@@ -44,7 +43,6 @@ function PanelAlumno() {
     profesor="Ing. Silva" 
     curso="6to Año TC" 
     ruta="/Matematica" 
-    icono="📐" 
     colorFondo="#f0610e"
   />
 
@@ -53,7 +51,6 @@ function PanelAlumno() {
     profesor="Prof. Méndez" 
     curso="6to Año TC" 
     ruta="/Fisica" 
-    icono="⚛️" 
    colorFondo="rgba(122, 194, 40, 0.65)"
   />
 
@@ -62,7 +59,6 @@ function PanelAlumno() {
     profesor="Lic. Pérez" 
     curso="6to Año TC" 
     ruta="/Programacion" 
-    icono="💻"  
     colorFondo="rgba(119, 10, 165, 0.75)" 
   />  
 </div>

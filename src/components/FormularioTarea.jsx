@@ -39,7 +39,7 @@ const FormularioTarea = ({ materiaNombre, colorMateria }) => {
               name="titulo"
               value={tarea.titulo} 
               onChange={handleChange} 
-              placeholder="Ej: TP de Integrales"
+              placeholder="Escribe aquí el titulo..."
               required 
             />
           </div>
@@ -47,7 +47,8 @@ const FormularioTarea = ({ materiaNombre, colorMateria }) => {
           <div className="form-group">
             <label>Instrucciones</label>
             <textarea 
-              name="caca" 
+              type="text"
+              name="descripcion" 
               value={tarea.descripcion} 
               onChange={handleChange} 
               placeholder="Escribe aquí las consignas..."
@@ -61,12 +62,12 @@ const FormularioTarea = ({ materiaNombre, colorMateria }) => {
               type="date" 
               name="fechaEntrega" 
               value={tarea.fechaEntrega} 
-              onChange={handleChange} required 
+              onChange={handleChange} required
             />
           </div>
 
           <button type="submit" className="btn-submit">
-            Publicar Tarea
+            Publicar
           </button>
         </form>
       </div>

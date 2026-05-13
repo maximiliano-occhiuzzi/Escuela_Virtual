@@ -34,15 +34,14 @@ const Contacto = () => {
                 }   
          center={
                   <>
-                    <li><Link to="/" className="nav-link-custom">Home</Link></li>
+                    <li><Link to="/" className="nav-link-custom">Inicio</Link></li>
                     <li><Link to="/nosotros" className="nav-link-custom">¿Quiénes somos?</Link></li>
-                    <li><Link to="/contacto" className="nav-link-custom">Contacto</Link></li>
                   </>
                 }
       />
       <main className="container-contacto">
         <div className="contacto-card">
-          <h1 className="titulo-seccion">Contáctanos ✉️</h1>
+          <h1 className="titulo-seccion">Contáctanos</h1>
           <p className="subtitulo">Déjanos tus dudas y te responderemos a la brevedad.</p>
 
           <form onSubmit={handleSubmit} className="form-contacto">
@@ -77,7 +76,7 @@ const Contacto = () => {
             />
 
             <button type="submit" className="btn-enviar-contacto">
-              Enviar Mensaje
+              Enviar
             </button>
           </form>
         </div>

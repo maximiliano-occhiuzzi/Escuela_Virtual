@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="pie-pagina">
       <img src={miLogo} alt="Logo" style={{ height: '40px' }} />
-      <p>© 2026 Instituto Luna - Escuela Virtual</p>
+      <p>© Instituto Luna 2026</p>
     </footer>
   );
 };

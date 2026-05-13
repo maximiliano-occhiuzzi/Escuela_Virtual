@@ -23,10 +23,9 @@ function PanelDocente() {
       <main className="container mt-4">
         <div className="d-flex justify-content-between align-items-center">
             <div>
-                <h2>Panel de Control Docente</h2>
+                <h2>¡Bienvenido!</h2>
                 <p className="text-muted">Seleccione una materia para gestionar tareas y contenidos.</p>
-            </div>
-            <span className="badge bg-primary p-2">Perfil: Profesor</span>
+            </div><spam className= "badge bg-primary p-2">Perfil: Docente</spam>
         </div>
 
         <div className="contenedor-grid">
@@ -35,7 +34,7 @@ function PanelDocente() {
             profesor="Gestionar Curso" 
             curso="6to Año TC" 
             ruta="/Matematica" 
-            icono="📐" 
+            icono="" 
             colorFondo="#f0610e" 
           />
 
@@ -44,7 +43,7 @@ function PanelDocente() {
             profesor="Gestionar Curso" 
             curso="6to Año TC" 
             ruta="/Fisica" 
-            icono="⚛️" 
+            icono="" 
             colorFondo="rgba(122, 194, 40, 0.65)" 
           />
 
@@ -53,7 +52,7 @@ function PanelDocente() {
             profesor="Gestionar Curso" 
             curso="6to Año TC" 
             ruta="/Programacion" 
-            icono="💻"  
+            icono=""  
             colorFondo="rgba(119, 10, 165, 0.75)" 
           />   
         </div>
