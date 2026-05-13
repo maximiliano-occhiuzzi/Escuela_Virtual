@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Contacto.css';
 import Navbar from "../components/Navbar";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 
 const Contacto = () => {
@@ -11,7 +11,8 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("¡Gracias por tu mensaje! Te contactaremos pronto.");
-  };
+  
+  };  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,7 +22,16 @@ const Contacto = () => {
     <>
       <Navbar 
         logo={<Link to="/"><img src={miLogo} alt="Logo" style={{height:'60px'}}/></Link>}
-        rightsesion={<Link to="/" className="btn-salir">Volver</Link>}
+         rightsesion={
+                  <Link to="/Login">
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" 
+                      alt="Login" 
+                      className="img-login" 
+                      style={{ width: '40px' }}
+                    />
+                  </Link>
+                }   
          center={
                   <>
                     <li><Link to="/" className="nav-link-custom">Home</Link></li>

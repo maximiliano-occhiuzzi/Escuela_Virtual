@@ -30,7 +30,7 @@ function TarjetaClase({
 
         </div>
 
-        {/* PARTE INFERIOR */}
+
         <div
           className="tarjeta-inferior"
           style={{ background: colorFondo }}

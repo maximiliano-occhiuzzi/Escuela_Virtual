@@ -6,7 +6,7 @@ import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import Footer from '../components/Footer';
 
 function Matematica() {
-  const colorMateria = "#f0610e"; // El naranja de tu tarjeta
+  const colorMateria = "#f0610e"; 
   const [mostrarForm, setMostrarForm] = useState(false);
 
   return (

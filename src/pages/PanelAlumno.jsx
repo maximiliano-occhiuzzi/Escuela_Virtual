@@ -5,7 +5,7 @@ import TarjetaClase from "../components/TarjetaClase";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import Footer from "../components/Footer";
 
-// ... (tus imports iguales)
+
 
 function PanelAlumno() {
   return (
@@ -37,7 +37,7 @@ function PanelAlumno() {
         </div>
 
 
-        {/* CONTENEDOR DE LAS TARJETAS */}
+   
        <div className="contenedor-grid">
   <TarjetaClase 
     nombre="Matemática" 
@@ -45,7 +45,7 @@ function PanelAlumno() {
     curso="6to Año TC" 
     ruta="/Matematica" 
     icono="📐" 
-    colorFondo="#f0610e" /* Azul claro */
+    colorFondo="#f0610e"
   />
 
   <TarjetaClase 
@@ -54,7 +54,7 @@ function PanelAlumno() {
     curso="6to Año TC" 
     ruta="/Fisica" 
     icono="⚛️" 
-   colorFondo="rgba(122, 194, 40, 0.65)" /* Rojizo claro */
+   colorFondo="rgba(122, 194, 40, 0.65)"
   />
 
   <TarjetaClase 
@@ -63,11 +63,11 @@ function PanelAlumno() {
     curso="6to Año TC" 
     ruta="/Programacion" 
     icono="💻"  
-    colorFondo="rgba(119, 10, 165, 0.75)" /* Verdoso claro */
+    colorFondo="rgba(119, 10, 165, 0.75)" 
   />  
 </div>
           
-          {/* Puedes agregar más tarjetas aquí y se acomodarán solas */}
+         
       </main>
       <Footer/>
     </>

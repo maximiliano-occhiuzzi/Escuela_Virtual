@@ -1,15 +1,11 @@
-/* =========================
-   LINK
-========================= */
+
 
 .tarjeta-link {
   text-decoration: none;
   display: block;
 }
 
-/* =========================
-   TARJETA GENERAL
-========================= */
+
 
 .tarjeta-mosaico {
   height: 250px;
@@ -43,9 +39,7 @@
   border-color: #D1D5DB;
 }
 
-/* =========================
-   MITAD SUPERIOR
-========================= */
+
 
 .tarjeta-superior {
   flex: 1;
@@ -59,9 +53,7 @@
   position: relative;
 }
 
-/* =========================
-   LOGO
-========================= */
+
 
 .logo-instituto-card {
   position: absolute;
@@ -76,17 +68,13 @@
 
 }
 
-/* =========================
-   ICONO
-========================= */
+
 
 .tarjeta-icono {
   font-size: 55px;
 }
 
-/* =========================
-   MITAD INFERIOR
-========================= */
+
 
 .tarjeta-inferior {
   flex: 1;
@@ -106,9 +94,7 @@
     backdrop-filter: blur(10px);
 }
 
-/* =========================
-   TEXTOS
-========================= */
+
 
 .tarjeta-nombre {
   margin: 0;
@@ -127,9 +113,7 @@
   color: #0f0f10;
 }
 
-/* =========================
-   BADGE
-========================= */
+
 
 .tarjeta-curso {
   background-color: white;

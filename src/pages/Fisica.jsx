@@ -6,7 +6,7 @@ import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import Footer from '../components/Footer';
 
 function Fisica() {
-  const colorMateria = "rgba(122, 194, 40, 0.65)"; // El verde de tu tarjeta
+  const colorMateria = "rgba(122, 194, 40, 0.65)"; 
   const [mostrarForm, setMostrarForm] = useState(false);
 
   return (

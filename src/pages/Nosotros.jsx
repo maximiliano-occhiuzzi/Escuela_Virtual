@@ -10,7 +10,16 @@ const Nosotros = () => {
     <>
       <Navbar 
         logo={<Link to="/"><img src={miLogo} alt="Logo" style={{height:'60px'}}/></Link>}
-        rightsesion={<Link to="/" className="btn-salir">Volver</Link>}
+         rightsesion={
+                  <Link to="/Login">
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" 
+                      alt="Login" 
+                      className="img-login" 
+                      style={{ width: '40px' }}
+                    />
+                  </Link>
+                }   
          center={
                   <>
                     <li><Link to="/" className="nav-link-custom">Home</Link></li>
@@ -18,7 +27,11 @@ const Nosotros = () => {
                     <li><Link to="/contacto" className="nav-link-custom">Contacto</Link></li>
                   </>
                 }
+
+                
       />
+
+      
       <main className="container-nosotros">
         <div className="nosotros-card">
           <h1 className="titulo-seccion">Quiénes Somos 🚀</h1>

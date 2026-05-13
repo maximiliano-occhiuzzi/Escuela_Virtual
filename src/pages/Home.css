@@ -5,20 +5,19 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* CONTENEDOR CON LA IMAGEN DE FONDO */
-/* CONTENEDOR CON LA IMAGEN DE FONDO */
+
 .contenido-principal {
   max-width: 2000px;
   margin: 0 auto;
   padding: 60px 40px;
-  position: relative; /* Esto es clave para que el fondo no se escape */
+  position: relative; 
   border-radius: 20px; 
   overflow: hidden; 
   border: 1px solid #e5e7eb;
-  z-index: 1; /* Esto asegura que el contenedor esté por encima del body */
+  z-index: 1; 
 }
 
-/* La capa de la imagen con opacidad */
+
 .contenido-principal::before {
   content: "";
   position: absolute;
@@ -27,20 +26,20 @@
   width: 100%;
   height: 100%;
   
-  /* Tu imagen de fondo */
+
   background-image: url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   
-  /* Ajuste de opacidad */
+
   opacity: 0.60; 
   
-  /* Z-index negativo para que se meta DEBAJO del contenido del div */
+
   z-index: -1; 
 }
 
-/* Header / Hero Section */
+
 .home-presentacion {
   padding: 90px 20px;
   text-align: center;
@@ -54,7 +53,7 @@
 }
 
 .bloque-texto h1 span {
-  color: #60a5fa; /* El azul de tu hover en el navbar */
+  color: #60a5fa;
 }
 
 .bloque-texto p {
@@ -64,7 +63,7 @@
   max-width: 600px;
 }
 
-/* Botones con estilo coherente */
+
 .botones-accion {
   display: flex;
   justify-content: center;
@@ -72,7 +71,7 @@
 }
 
 .btn-azul-luna {
-  background-color: #000000; /* Negro sólido, queda muy bien con el blanco/azul */
+  background-color: #000000;
   color: #ffffff;
   padding: 14px 28px;
   border-radius: 8px;
@@ -82,7 +81,7 @@
 }
 
 .btn-borde-luna {
-  border: 1px solid #e5e7eb; /* El mismo borde que tu navbar */
+  border: 1px solid #e5e7eb; 
   color: #333;
   padding: 14px 28px;
   border-radius: 8px;
@@ -90,7 +89,7 @@
   font-weight: 600;
 }
 
-/* Seccion de Cuadros (Tu estructura original) */
+
 .seccion-cuadros {
   display: flex;
   justify-content: space-between;
@@ -104,13 +103,13 @@
   border-radius: 15px;
   text-align: center;
   flex: 1;
-  border: 1px solid #e5e7eb; /* Mismo borde que el navbar */
+  border: 1px solid #e5e7eb;
   transition: transform 0.3s ease;
 }
 
 .cuadro-info:hover {
   transform: translateY(-5px);
-  border-color: #60a5fa; /* Resalta con tu color de hover */
+  border-color: #60a5fa; 
 }
 
 .cuadro-info img {
@@ -138,7 +137,7 @@
   border-top: 1px solid #e5e7eb;
 }
 
-/* Responsive básico */
+
 @media (max-width: 768px) {
   .seccion-cuadros {
     flex-direction: column;

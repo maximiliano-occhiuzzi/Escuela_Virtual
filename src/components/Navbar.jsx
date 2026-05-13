@@ -12,6 +12,7 @@
             <div className="navbar-left"
             >{logo}</div>
 
+          
 
             <nav className="navbar-center">
             <ul className="nav-links">
@@ -20,7 +21,7 @@
           </nav>
 
               <div className="navbar-right">
-              {rightsesion}
+              {rightsesion} 
                 </div>
 
 
