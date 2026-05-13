@@ -1,33 +1,33 @@
 /* Navbar.css */
 
 .navbar-custom {
-  position: sticky; /* Cambiado a sticky normal (Safari ya lo soporta bien) */
+ 
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   
-  /* Fondo blanco con un toque de transparencia y desenfoque */
+
   background-color: rgba(255, 255, 255, 0.8); 
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
   
-  padding: 10px 0; /* Ajustado para que el contenedor mande */
+  padding: 10px 0; 
   border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05); /* Sombra más sutil */
-  margin-bottom: 0; /* CRUCIAL: Para que se pegue al contenido */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  margin-bottom: 0;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px; /* Misma medida que tu contenido principal */
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px; /* Aire a los costados */
+  padding: 0 20px;
 }
 
-/* IZQUIERDA: Logo */
+
 .navbar-left {
   flex: 1;
   display: flex;
@@ -35,7 +35,7 @@
 }
 
 
-/* CENTRO: Botones */
+
 .navbar-center {
   flex: 2;
   display: flex;
@@ -50,14 +50,13 @@
   padding: 0;
 }
 
-/* DERECHA: Login */
 .navbar-right { 
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
-/* ESTILO DE LOS LINKS */
+
 .nav-link-custom {
   color: #111111 !important; /* Un negro un pelín más suave */
   text-decoration: none;
@@ -71,7 +70,7 @@
   color: #60a5fa !important;
 }
 
-/* Un detalle pro: rayita que aparece al pasar el mouse */
+
 .nav-link-custom::after {
   content: '';
   position: absolute;

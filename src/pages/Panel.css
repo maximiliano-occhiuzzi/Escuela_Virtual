@@ -1,6 +1,4 @@
-/* =========================
-   CONTENEDOR PRINCIPAL
-========================= */
+/* Panel css */
 
 body{
   background-color: #FFFFFF;
@@ -15,9 +13,6 @@ main.container {
   min-height: 100vh;
 }
 
-/* =========================
-   TITULOS
-========================= */
 
 h2 {
   color: #111827;
@@ -34,9 +29,6 @@ h2 {
   text-align: left;
 }
 
-/* =========================
-   GRID
-========================= */
 
 .contenedor-grid {
   display: grid;
@@ -51,9 +43,7 @@ h2 {
   width: 100%;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+
 
 .nav-link {
   color: #000 !important;
