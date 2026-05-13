@@ -58,12 +58,12 @@
 
 
 .nav-link-custom {
-  color: #111111 !important; /* Un negro un pelín más suave */
+  color: #111111 !important;
   text-decoration: none;
-  font-size: 15px; /* Un punto menos suele verse más pro */
+  font-size: 15px; 
   font-weight: 600;
   transition: all 0.3s ease;
-  position: relative; /* Para el efecto de la rayita abajo */
+  position: relative; 
 }
 
 .nav-link-custom:hover {
@@ -86,7 +86,7 @@
   width: 100%;
 }
 
-/* IMAGEN DE LOGIN */
+
 .img-login {
   width: 38px;
   height: 38px;

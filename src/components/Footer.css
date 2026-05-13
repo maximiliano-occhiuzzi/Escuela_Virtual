@@ -3,8 +3,9 @@
   padding: 30px;
   background-color: #ffffff;
   border-top: 1px solid #e5e7eb;
-  margin-top: auto; /* Empuja el footer al final si usas flexbox */
+  margin-top: auto; 
   width: 100%;
+
 }
 
 .pie-pagina p {
