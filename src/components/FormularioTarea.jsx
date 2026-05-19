@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FormularioTarea.css';
+import axios from "axios";
 
 const FormularioTarea = ({ materiaNombre, colorMateria }) => {
  
@@ -17,14 +18,52 @@ const FormularioTarea = ({ materiaNombre, colorMateria }) => {
   };
 
   
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-    console.log("Datos de la tarea listos para enviar:", tarea);
-    alert(`Tarea de ${materiaNombre} guardada.`);
-  };
+const handleSubmit = async (e) => {
+
+  e.preventDefault();
+
+  try {
+
+    const response = await axios.post(
+
+      "http://localhost:3001/tareas",
+
+      {
+
+        ...tarea,
+
+        materia: materiaNombre
+
+      }
+
+    );
+
+    console.log(response.data);
+
+    alert(`Tarea de ${materiaNombre} guardada`);
+
+    setTarea({
+
+      titulo: "",
+
+      descripcion: "",
+
+      fechaEntrega: ""
+
+    });
+
+  } catch (error) {
+
+    console.log(error);
+
+    alert("Error al guardar tarea");
+
+  }
+
+};
 
   return (
-    <div className="form-container">
+    <div className="form-container">npm 
       <div className="form-card">
      
         <div className="form-header" style={{ backgroundColor: colorMateria }}>

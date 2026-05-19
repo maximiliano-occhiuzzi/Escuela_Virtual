@@ -5,8 +5,14 @@ import Navbar from "../components/Navbar";
 import TarjetaClase from "../components/TarjetaClase";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+
+
 
 function PanelDocente() {
+ 
+
+  const navigate = useNavigate();
   return (
     <>
       <Navbar
@@ -15,9 +21,28 @@ function PanelDocente() {
             <img src={miLogo} alt="Logo" style={{ height: '60px', width: 'auto' }} />
           </Link>
         }
-        rightsesion={ 
-          <Link to="/" className="btn btn-outline-danger btn-sm">Cerrar sesión</Link>
-        }
+       
+         rightsesion={
+
+  <button
+
+    className="btn btn-outline-danger"
+
+    onClick={() => {
+
+      localStorage.removeItem("usuario");
+
+      navigate("/");
+
+    }}
+
+  >
+
+    Cerrar Sesion
+
+  </button>
+
+}
       />
 
       <main className="container mt-4">

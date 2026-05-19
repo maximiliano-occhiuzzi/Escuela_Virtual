@@ -4,6 +4,9 @@ import Navbar from "../components/Navbar";
 import "./Home.css";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 
+const usuario = JSON.parse(
+  localStorage.getItem("usuario")
+);
 function Home() {
   return (
     <div className="pagina-inicio">
@@ -23,17 +26,44 @@ function Home() {
             <li><Link to="/contacto" className="nav-link-custom">Contacto</Link></li>
           </>
         }
-        rightsesion={
-          <Link to="/Login">
-            <img 
-              src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" 
-              alt="Login" 
-              className="img-login" 
-              style={{ width: '40px' }}
-            />
-          </Link>
-        }   
+       rightsesion={
+
+  usuario ? (
+
+    <Link
+      to={
+        usuario.rol === "docente"
+        ? "/PanelDocente"
+        : "/PanelAlumno"
+      }
+    >
+
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png"
+        alt="Panel"
+        className="img-login"
+        style={{ width: '40px' }}
       />
+
+    </Link>
+
+  ) : (
+
+    <Link to="/Login">
+
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png"
+        alt="Login"
+        className="img-login"
+        style={{ width: '40px' }}
+      />
+
+    </Link>
+
+  )
+
+}
+/>
 
       <main className="contenido-principal">
         

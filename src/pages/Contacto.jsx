@@ -4,15 +4,45 @@ import Navbar from "../components/Navbar";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import axios from "axios";
+
 
 const Contacto = () => {
   const [formData, setFormData] = useState({ nombre: '', email: '', mensaje: '' });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("¡Gracias por tu mensaje! Te contactaremos pronto.");
-  
-  };  
+ const handleSubmit = async (e) => {
+
+  e.preventDefault();
+
+  try {
+
+    const response = await axios.post(
+
+      "http://localhost:3001/contacto",
+
+      formData
+
+    );
+
+    console.log(response.data);
+
+    alert("Mensaje enviado correctamente");
+
+    setFormData({
+      nombre: "",
+      email: "",
+      mensaje: ""
+    });
+
+  } catch (error) {
+
+    console.log(error);
+
+    alert("Error al enviar mensaje");
+
+  }
+
+}; 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

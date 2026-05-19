@@ -4,10 +4,15 @@ import Navbar from "../components/Navbar";
 import TarjetaClase from "../components/TarjetaClase";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
 function PanelAlumno() {
+const navigate = useNavigate();
+
   return (
     <>
       <Navbar
@@ -21,18 +26,34 @@ function PanelAlumno() {
           </Link>
         }
       
-        rightsesion={ 
-          <Link to="/" className="btn btn-outline-danger btn-sm">
-            Cerrar sesión
-          </Link>
-        }
+        rightsesion={
+
+  <button
+
+    className="btn btn-outline-danger"
+
+    onClick={() => {
+
+      localStorage.removeItem("usuario");
+
+      navigate("/");
+
+    }}
+
+  >
+
+    Cerrar Sesion
+
+  </button>
+
+}
       />
         <main className="container mt-4">
         <div className="d-flex justify-content-between align-items-center">
             <div>
                 <h2>¡Bienvenido!</h2>
                 <p className="text-muted">Acá vas a poder ver tus clases.</p>
-            </div><spam className= "badge bg-primary p-2">Perfil: Alumno</spam>
+            </div><span className= "badge bg-primary p-2">Perfil: Alumno</span>
         </div>
 
 
