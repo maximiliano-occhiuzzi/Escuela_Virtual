@@ -92,7 +92,7 @@ const navigate = useNavigate();
     onClick={() => {
 
       localStorage.removeItem("usuario");
-
+      setUsuario(null);
       navigate("/");
 
     }}

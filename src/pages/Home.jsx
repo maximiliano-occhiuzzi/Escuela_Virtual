@@ -4,10 +4,11 @@ import Navbar from "../components/Navbar";
 import "./Home.css";
 import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 
-const usuario = JSON.parse(
-  localStorage.getItem("usuario")
-);
+
 function Home() {
+  const usuario = JSON.parse(
+  localStorage.getItem("usuario")
+);    
   return (
     <div className="pagina-inicio">
       <Navbar

@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 import "./Login.css";
+import Navbar from "../components/Navbar";
+import miLogo from "../assets/Contemporary Crescent Moon logo with Text.png";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 const navigate = useNavigate();
+    
   const handleLogin = async (e) => {
 
   e.preventDefault();
@@ -53,6 +56,18 @@ if (usuario.rol === "alumno") {
 };
 
   return (
+    <>
+    <Navbar
+        logo={
+          <Link to="/" className="d-flex align-items-center text-decoration-none">
+            <img
+              src={typeof miLogo !== 'undefined' ? miLogo : ""} // Evita romper si no está definido
+              alt="Logo Escuela"
+              style={{ height: "60px", width: "auto", objectFit: "contain" }}
+            />
+          </Link>
+        }
+      />
     <div className="login-bg">
         
       <div className="login-card shadow">
@@ -80,6 +95,7 @@ if (usuario.rol === "alumno") {
         
       </div>
     </div>
+    </>
   );
 }
 
